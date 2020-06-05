@@ -11,7 +11,7 @@ class FacialExpressionModel(object):
 
     EMOTIONS_LIST =[ "Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
 
-    def__init__(self,model_json_file,model_weights_file):
+    def __init__(self,model_json_file,model_weights_file):
        with open(model_json_file,"r") as json_file:
            loaded_model_json = json_file.read()
            self.loaded_model = model_from_json(loaded_model_json)
